@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - pip3 install -r requirements.txt
+artifacts:
+  type: zip
+  files:
+    - 'buildspec.yml'
+    - 'application.py'
+    - 'requirements.txt'
+
+
